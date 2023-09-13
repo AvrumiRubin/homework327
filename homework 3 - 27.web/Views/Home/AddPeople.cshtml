@@ -1,0 +1,43 @@
+﻿<div class="col-md-6 offset-md-3 mt-3">
+    <button class="btn btn-danger" id="add-rows">Add Row</button>
+</div>
+<form method="post" action="/home/addpeople">
+
+   <div id="ppl-rows"> 
+    <div class="row">       
+        <div class="bg-light rounded-3 p-5 mt-3">
+            <div class="col-md-6 offset-md-3">
+                <input type="text" name="peoples[0].firstname" class="form-control" placeholder="First Name" />
+            </div>
+            <div class="col-md-6 offset-md-3 mt-3">
+                <input type="text" name="peoples[0].lastname" class="form-control" placeholder="Last Name" />
+            </div>
+            <div class="col-md-6 offset-md-3 mt-3">
+                <input type="text" name="peoples[0].age" class="form-control" placeholder="Age" />
+            </div>            
+
+        </div>
+
+      @*  <div class="bg-light rounded-3 p-5 mt-3">
+            <div class="col-md-6 offset-md-3">
+                <input type="text" name="peoples[1].firstname" class="form-control" placeholder="First Name" />
+            </div>
+            <div class="col-md-6 offset-md-3 mt-3">
+                <input type="text" name="peoples[1].lastname" class="form-control" placeholder="Last Name" />
+            </div>
+            <div class="col-md-6 offset-md-3 mt-3">
+                <input type="text" name="peoples[1].age" class="form-control" placeholder="Age" />
+            </div>
+
+        </div>*@
+
+        <div class="col-md-6 offset-md-3 mt-3">
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </div>
+    </div>
+</form>
+
+            @section Scripts {
+                <script src="/js/JavaScript.js"></script>
+            }
